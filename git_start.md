@@ -1,58 +1,61 @@
 ﻿## Немного о GIT
 
-## Для начала
-Установите Git (на Linux)
-sudo apt-get install git
+Установите Git (на Linux)  
+`sudo apt-get install git`  
 
-Нужно задать (сконфигурировать) свое имя и свой email
-**git config --global user.name "your_name"**
-**git config --global user.name your_email**
+Нужно задать (сконфигурировать) свое имя и свой email  
+**git config --global user.name "your_name"**  
+**git config --global user.name your_email**  
 
-инициализируем  git
-**git init**
+Клонирование репозитория из github к себе локально  
+**git clone your_link**  
+(example: git clone https://github.com/VladSnow/notes)  
 
-добавить все файлы в git 
-**git add --all**
+инициализируем  git  
+**git init**  
 
-проверить статус
-**git status**
+добавить все файлы в git  
+**git add --all**  
 
-закоммитить файлы
-**git commit -m "your_message"**
+проверить статус  
+**git status**  
 
-задать путь к репозиторию на github
-**git remote add your_title your_link_github**
-(example: git remote gitProject https://github.com/VladSnow/Notes)
+закоммитить файлы  
+**git commit -m "your_message"**  
 
-посмотреть удаленные репозитории
-**git remote**
+задать путь к репозиторию на github  
+**git remote add your_title your_link_github**  
+(example: git remote gitProject https://github.com/VladSnow/notes)  
 
-заливаем проект по заданному пути
-**git push your_title master**
-(example: git push gitProject master)
+посмотреть удаленные репозитории  
+**git remote**  
 
-задать версию проекта
-**git tag "your_message"**
-(example: git tag "version_1.0")
+заливаем проект по заданному пути  
+**git push your_title master**  
+(example: git push gitProject master)  
 
-добавить новую ветку (от основной)
-**git branch your_branch_title**
-(example: git branch newBranch)
+задать версию проекта  
+**git tag "your_message"**  
+(example: git tag "version_1.0")  
 
-перемещение в нужную ветку
-**git checkout your_branch_title**
-(example: git checkout newBranch)
+добавить новую ветку (от основной)  
+**git branch your_branch_title**  
+(example: git branch newBranch)  
 
-проверить в какой ветке находимся в данный момент
-**git branch**
+перемещение в нужную ветку  
+**git checkout your_branch_title**  
+(example: git checkout newBranch)  
 
-слияние веток (когда находимся в мастере)
-**git merge your_branch_title**
-(example: git merge newBranch)
+проверить в какой ветке находимся в данный момент  
+**git branch**  
 
-посмотреть историю изменений git
-**git log**
+слияние веток (когда находимся в мастере)  
+**git merge your_branch_title**  
+(example: git merge newBranch)  
+
+посмотреть историю изменений git  
+**git log**  
 
 ---
 
-спека для создания файла .gitignore - https://orlov.io/ru/articles/podrobnee-o-faile-gitignore
+[спека для создания файла]:(https://orlov.io/ru/articles/podrobnee-o-faile-gitignore) .gitignore
