@@ -6,7 +6,8 @@
 * [Настройка raspi-config](#chapter-1)  
 * [Установка нужных пакетов](#chapter-2)  
 * [Установка и проверка openVG](#chapter-3)  
-* [Настройка статичного ip](#chapter-4)
+* [Настройка статичного ip](#chapter-4)  
+* [Клонирование и запуск smartRTU](#chapter-5)
 
 <a id="chapter-0"></a>  
 
@@ -89,4 +90,21 @@ interface eth0
 static ip_address=192.168.0.100/24  
 static routers=192.168.0.1  
 static domain_name_servers=192.168.0.300 8.8.8.8  
+```  
+
+<a id="chapter-5"></a> 
+
+## Клонирование и запуск smartRTU  
+Клонируем проект *smartRTU* к себе на Raspberry Pi  
 ```
+cd ~  
+git clone https://github.com/RTUDF/smartRTU  
+```  
+Запускаем проект  
+```
+cd smartRTU  
+sudo rm -rf infoboard  
+sudo make  
+./infoboard  
+```  
+*Для немедленного выхода из запущенной программы* горячая клавиша -> `Ctrl + C`  

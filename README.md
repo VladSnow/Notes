@@ -13,6 +13,6 @@
 * [Если Linux - можно установить grip](https://github.com/joeyespo/grip)  
 
 ### Полезная информация  
-**Оформление файлов .md**  
+Оформление файлов .md  
   * [Шпаргалка по Markdown](https://github.com/sandino/Markdown-Cheatsheet)  
   * [Разметка README.md](http://coddism.com/zametki/razmetka_readmemd_v_github)  
