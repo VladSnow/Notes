@@ -6,8 +6,13 @@
 ## Содержание  
 * [Git. Быстрый старт](https://github.com/VladSnow/notes/blob/master/git_start.md)  
 * [Документация по установки smartRTU с нуля на Raspberry Pi](https://github.com/VladSnow/notes/blob/master/guide_smartRTU.md)  
----
-Сервисы для просмотра файлов .md  
+
+### Сервисы для просмотра файлов .md  
 * [StackEdit](https://stackedit.io/)  
 * [Dillinger](https://dillinger.io/)  
-* [Если Linux - можно установить grip](https://github.com/joeyespo/grip)
+* [Если Linux - можно установить grip](https://github.com/joeyespo/grip)  
+
+### Полезная информация  
+**Оформление файлов .md**  
+  * [Шпаргалка по Markdown](https://github.com/sandino/Markdown-Cheatsheet)  
+  * [Разметка README.md](http://coddism.com/zametki/razmetka_readmemd_v_github)  
