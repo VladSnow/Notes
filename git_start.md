@@ -58,4 +58,4 @@
 
 ---
 
-[спека для создания файла]:(https://orlov.io/ru/articles/podrobnee-o-faile-gitignore) .gitignore
+[спека для создания файла .gitignore](https://orlov.io/ru/articles/podrobnee-o-faile-gitignore) 
