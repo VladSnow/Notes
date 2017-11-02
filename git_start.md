@@ -10,7 +10,7 @@
 * Клонирование репозитория из github к себе локально  
 **git clone your_link**  
 (example: git clone https://github.com/VladSnow/notes)  
-
+---
 * инициализируем  git  
 **git init**  
 
@@ -33,7 +33,7 @@
 * заливаем проект по заданному пути  
 **git push your_title master**  
 (example: git push gitProject master)  
-
+---
 * задать версию проекта  
 **git tag "your_message"**  
 (example: git tag "version_1.0")  
