@@ -73,9 +73,9 @@ cd client
 > В переменной LIBFLAGS  
 > -lEGL -lGLESv2 меняем на -lbrcmEGL -lbrcmGLESv2  
 
-`make test`
+`make test`  
 Запускаем тест -> `./shapedemo`
-*Для немедленного выхода из запущенной программы* горячая клавиша -> `clrt + C`  
+*Для немедленного выхода из запущенной программы* горячая клавиша -> `Ctrl + C`  
 
 <a id="chapter-4"></a> 
 
