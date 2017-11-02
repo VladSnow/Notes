@@ -1,7 +1,7 @@
 ![VLAD SNOW](https://raw.githubusercontent.com/VladSnow/notes/master/img/git_banner.png)
-# Добро пожаловать, боец!  
+## Добро пожаловать, боец!  
 
 Меня зовут Влад. Я обычный студент РТУ на факультете программирования. В данном репозитории я оставляю свои рабочие заметки, описываю то что сам изучал и продолжаю. Возможно они помогут и вам быстрее начать ориентироваться в прогерских штуках :)
----
+
 ## содержание  
-* [Git. Быстрый старт](https://github.com/VladSnow/notes/git_start.md)
+* [Git. Быстрый старт](https://github.com/VladSnow/notes/blob/master/git_start.md)
