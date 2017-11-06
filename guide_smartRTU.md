@@ -7,7 +7,9 @@
 * [Установка нужных пакетов](#chapter-2)  
 * [Установка и проверка openVG](#chapter-3)  
 * [Настройка статичного ip](#chapter-4)  
-* [Клонирование и запуск smartRTU](#chapter-5)
+* [Клонирование и запуск smartRTU](#chapter-5)  
+* [Настройка автозапуска smartRTU](#chapter-6)  
+* [Настройка принудительного включения HDMI](#chapter-7)  
 
 <a id="chapter-0"></a>  
 
@@ -108,3 +110,45 @@ sudo make
 ./infoboard  
 ```  
 *Для немедленного выхода из запущенной программы* горячая клавиша -> `Ctrl + C`  
+
+<a id="chapter-6"></a> 
+
+## Настройка автозапуска smartRTU  
+заходим в файл `/etc/rc.local`  
+перед **exit 0** записываем следующие строки:  
+```
+cd /home/pi/smartRTU/  
+./infoboard.sh >> ./infoboard.log  
+```  
+строка `/home/pi/smartRTU/` это путь к репозиторию где находится сам проект *smartRTU*  
+
+Теперь нужно задать root права для файлов:  
+```  
+infoboard.log  
+infoboard.sh  
+watchdog.sh  
+```  
+Заходим через `sudo mc` в наш репозиторий *smartRTU* и находим данные 3 файла.  
+> p.s. Для того что бы появился файл infoboard.log нужно хоть раз запустить infoboard.sh.  
+Далее наводим на нужный файл и делаем хитрую комбинацию `Ctrl + X` отпускаем и после сразу нажимаем `C`.  
+В появившимся окне Chmod command ставим крестики у:  
+```  
+execute/search by owner  
+execute/search by group  
+execute/search by others  
+```  
+И приминаем проделанные действия **Set**.  
+> p.s. немного некорректно для безопасности задавать все 3 права root, имейте это ввиду.
+
+<a id="chapter-7"></a> 
+
+## Настройка принудительного включения HDMI   
+Для этого заходим в `/boot/config.txt` и раскомментируем такие строки как:  
+```  
+hdmi_force_hotplug=1  
+hdmi_group=1  
+hdmi_mode=19  
+hdmi_drive=1  
+```  
+> p.s. Все значения были настроены для телевизора в фае RTU.
+Для настройки под свои параметры экрана вам поможет этот [**мануал**](http://www.armlinux.ru/%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%BE%D0%B2-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-config-txt/).  
