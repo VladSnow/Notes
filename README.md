@@ -16,3 +16,4 @@
 Оформление файлов .md  
   * [Шпаргалка по Markdown](https://github.com/sandino/Markdown-Cheatsheet)  
   * [Разметка README.md](http://coddism.com/zametki/razmetka_readmemd_v_github)  
+  * [Кратко о ООП в C++](http://itedu.ru/courses/cpp/oop-in-cpp)  
